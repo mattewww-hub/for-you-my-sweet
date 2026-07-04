@@ -150,3 +150,61 @@ body, html{
     box-shadow:0 10px 25px rgba(0,0,0,.2);
 
 }
+
+/* ---------- CARGA ---------- */
+
+.pantalla-carga{
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    background:#0f061d;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    color:white;
+
+    z-index:9999;
+
+}
+
+.corazon{
+
+    font-size:70px;
+
+    animation:girar 1.2s linear infinite;
+
+}
+
+.pantalla-carga p{
+
+    margin-top:20px;
+
+    font-size:18px;
+
+    opacity:.8;
+
+}
+
+@keyframes girar{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
