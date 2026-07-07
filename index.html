@@ -1,32 +1,41 @@
 <!DOCTYPE html>
 <html lang="es-LA">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>For you my sweet</title>
+
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    
+
+    <!-- ================= LOGIN ================= -->
+
     <div class="login">
 
         <div class="login-card">
 
-            <h2>Bienvenida mi amor</h2>
-            <p> Para continuar porfa haz esto jsjs</p>
+            <h2>Bienvenida mi amor ❤️</h2>
+
+            <p>Para continuar responde estas dos preguntitas jeje</p>
 
             <input
-            type="text"
-            id="usuario"
-            placeholder="Ingresa tu usuario/apodo">
+                type="text"
+                id="usuario"
+                placeholder="Ingresa tu usuario/apodo">
 
             <input
-            type="password"
-            id="contraseña"
-            placeholder="Ingresa tus numeros favoritos">
+                type="password"
+                id="contraseña"
+                placeholder="Ingresa tus números favoritos">
 
             <button id="entrar">
-            Entrar
+
+                Entrar
+
             </button>
 
             <p id="mensaje"></p>
@@ -35,27 +44,42 @@
 
     </div>
 
+    <!-- ================= PANTALLA DE CARGA ================= -->
+
     <div class="pantalla-carga">
 
         <div class="corazon">
-        ❤️
+
+            ❤️
+
         </div>
 
-        <p>Preparando una sorpresa...</p>
+        <p id="textoCarga">
+
+            Preparando una sorpresa...
+
+        </p>
 
     </div>
 
+    <!-- ================= ANIVERSARIO ================= -->
 
     <div class="aniversario">
 
         <div class="contenedor">
 
-            <h1>Te amo mucho</h1>
+            <h1>Te amo mucho ❤️</h1>
 
-            <p>Aniversario!</p>
+            <p>
 
-            <a href="https://www.youtube.com/watch?v=eTKeQhYVvbQ"
-            class="boton-redireccion" target="_blank">
+                Feliz aniversario mi amor.
+
+            </p>
+
+            <a
+            href="https://www.youtube.com/watch?v=eTKeQhYVvbQ"
+            class="boton-redireccion"
+            target="_blank">
 
                 Click aquí para ver un video especial
 
@@ -65,44 +89,69 @@
 
     </div>
 
-        <div class="musica">
+    <!-- ================= TARJETA DE MÚSICA ================= -->
 
-            <div class="musica-header">
+    <div class="musica">
 
-            <span>🎵</span>
+        <div class="musica-header">
 
-            <button id="cerrar-musica">—</button>
+            <button id="abrir-musica">
 
-            </div>
+                🎵
 
-            <h3>I love you too much</h3>
+            </button>
 
-            <p>The Book Of Life</p>
+            <button id="cerrar-musica">
+
+                —
+
+            </button>
+
+        </div>
+
+        <div class="contenido-musica">
+
+            <h3>
+
+                I Love You Too Much
+
+            </h3>
+
+            <p>
+
+                The Book Of Life
+
+            </p>
 
             <div class="volumen">
 
-                <div class="nivel activo"></div>
-                <div class="nivel activo"></div>
-                <div class="nivel activo"></div>
-                <div class="nivel activo"></div>
-                <div class="nivel activo"></div>
+                <div class="nivel activo" data-vol="1"></div>
+                <div class="nivel activo" data-vol="2"></div>
+                <div class="nivel activo" data-vol="3"></div>
+                <div class="nivel activo" data-vol="4"></div>
+                <div class="nivel activo" data-vol="5"></div>
 
-                <div class="nivel"></div>
-                <div class="nivel"></div>
-                <div class="nivel"></div>
-                <div class="nivel"></div>
-                <div class="nivel"></div>
+                <div class="nivel" data-vol="6"></div>
+                <div class="nivel" data-vol="7"></div>
+                <div class="nivel" data-vol="8"></div>
+                <div class="nivel" data-vol="9"></div>
+                <div class="nivel" data-vol="10"></div>
 
             </div>
 
-            <audio id="audio" loop>
-
-    <source src="I Love You Too Much Karaoke The Book Of Lifes.mp3" type="audio/mpeg">
-
-</audio>
-
         </div>
-            
+
+    </div>
+
+    <!-- ================= AUDIO ================= -->
+
+    <audio id="audio" loop>
+
+        <source
+        src="I Love You Too Much Karaoke The Book Of Lifes.mp3"
+        type="audio/mpeg">
+
+    </audio>
 
     <script src="script.js"></script>
 
