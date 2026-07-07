@@ -16,11 +16,17 @@ boton.addEventListener("click", function(){
         &&
         contraseña.value === "6759"
     ){
-        alert("Entró correctamente");
-
         login.style.display = "none";
 
-        pagina.classList.add("activo");
+carga.style.display = "flex";
+
+setTimeout(function(){
+
+    carga.style.display = "none";
+
+    pagina.classList.add("activo");
+
+},1800);
     }
 
     else{
