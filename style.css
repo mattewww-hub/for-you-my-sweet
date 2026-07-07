@@ -1,12 +1,30 @@
-body, html{
+/* ====================== */
+/* CONFIGURACIÓN GENERAL  */
+/* ====================== */
+
+*{
+
     margin:0;
     padding:0;
-    width:100%;
-    height:100%;
-    font-family: Arial, Helvetica, sans-serif;
+    box-sizing:border-box;
+
 }
 
-/* ---------- LOGIN ---------- */
+html,
+body{
+
+    width:100%;
+    height:100%;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    overflow:hidden;
+
+}
+
+/* ====================== */
+/* LOGIN */
+/* ====================== */
 
 .login{
 
@@ -22,9 +40,10 @@ body, html{
     background-size:cover;
 
 }
+
 .login-card{
 
-    width:350px;
+    width:360px;
 
     padding:35px;
 
@@ -36,7 +55,7 @@ body, html{
 
     border:1px solid rgba(255,255,255,.25);
 
-    box-shadow:0 10px 30px rgba(0,0,0,.25);
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
 
     text-align:center;
 
@@ -44,15 +63,15 @@ body, html{
 
 }
 
-.login-card h1{
+.login-card h2{
 
-    margin-top:0;
+    margin-bottom:10px;
 
 }
 
 .login-card p{
 
-    margin-bottom:25px;
+    margin-bottom:20px;
 
 }
 
@@ -70,11 +89,9 @@ body, html{
 
     outline:none;
 
-    background:rgba(255,255,255,.18);
+    background:rgba(255,255,255,.15);
 
     color:white;
-
-    box-sizing:border-box;
 
 }
 
@@ -98,13 +115,11 @@ body, html{
 
     color:#7a3cff;
 
-    font-size:16px;
-
     font-weight:bold;
 
     cursor:pointer;
 
-    transition:.3s;
+    transition:.15s;
 
 }
 
@@ -114,44 +129,15 @@ body, html{
 
 }
 
-/* ---------- PÁGINA ---------- */
+.login-card button:active{
 
-.aniversario{
-
-    display:none;
-
-    width:100vw;
-    height:100vh;
-
-    justify-content:center;
-    align-items:center;
-
-    background:url("fondo.jpg") center center;
-    background-size:cover;
+    transform:scale(.94);
 
 }
 
-.aniversario.activo{
-
-    display:flex;
-
-}
-
-.contenedor{
-
-    text-align:center;
-
-    padding:20px;
-
-    background:#FFEE8C;
-
-    border-radius:15px;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.2);
-
-}
-
-/* ---------- CARGA ---------- */
+/* ====================== */
+/* CARGA */
+/* ====================== */
 
 .pantalla-carga{
 
@@ -161,7 +147,7 @@ body, html{
 
     inset:0;
 
-    background:#0f061d;
+    background:#12051f;
 
     justify-content:center;
 
@@ -187,8 +173,6 @@ body, html{
 
     margin-top:20px;
 
-    font-size:18px;
-
     opacity:.8;
 
 }
@@ -209,6 +193,68 @@ body, html{
 
 }
 
+/* ====================== */
+/* ANIVERSARIO */
+/* ====================== */
+
+.aniversario{
+
+    display:none;
+
+    width:100vw;
+    height:100vh;
+
+    justify-content:center;
+    align-items:center;
+
+    background:url("fondo.jpg") center center;
+
+    background-size:cover;
+
+}
+
+.aniversario.activo{
+
+    display:flex;
+
+}
+
+.contenedor{
+
+    text-align:center;
+
+    background:#FFF4A8;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+
+}
+
+.boton-redireccion{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:12px 20px;
+
+    background:#FD5E4B;
+
+    color:white;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+}
+
+/* ====================== */
+/* MÚSICA */
+/* ====================== */
+
 .musica{
 
     position:fixed;
@@ -217,7 +263,7 @@ body, html{
 
     right:20px;
 
-    width:230px;
+    width:260px;
 
     padding:15px;
 
@@ -225,17 +271,19 @@ body, html{
 
     background:rgba(255,255,255,.12);
 
-    backdrop-filter:blur(12px);
+    backdrop-filter:blur(15px);
 
     color:white;
 
-    transition:.4s;
+    transition:.35s;
+
+    z-index:500;
 
 }
 
 .musica.oculta{
 
-    transform:translateX(180px);
+    transform:translateX(215px);
 
 }
 
@@ -249,7 +297,7 @@ body, html{
 
 }
 
-.musica button{
+.musica-header button{
 
     background:none;
 
@@ -263,11 +311,23 @@ body, html{
 
 }
 
+#abrir-musica{
+
+    font-size:24px;
+
+}
+
+.contenido-musica{
+
+    margin-top:15px;
+
+}
+
 .volumen{
 
     display:flex;
 
-    gap:4px;
+    gap:5px;
 
     margin-top:15px;
 
@@ -281,9 +341,17 @@ body, html{
 
     border-radius:3px;
 
-    background:rgba(255,255,255,.3);
+    background:rgba(255,255,255,.25);
 
     cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.nivel:hover{
+
+    transform:scale(1.1);
 
 }
 
