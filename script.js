@@ -1,3 +1,4 @@
+const audio = document.getElementById("audio");
 const usuario = document.getElementById("usuario");
 const contraseña = document.getElementById("contraseña");
 const boton = document.getElementById("entrar");
@@ -5,6 +6,10 @@ const login = document.querySelector(".login");
 const carga = document.querySelector(".pantalla-carga");
 const pagina = document.querySelector(".aniversario");
 const mensaje = document.getElementById("mensaje");
+
+audio.volume = 0.5;
+
+audio.play();
 
 boton.addEventListener("click", function(){
 
