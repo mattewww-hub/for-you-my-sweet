@@ -11,9 +11,9 @@ boton.addEventListener("click", function(){
     console.log(contraseña.value);
 
     if(
-        usuario.value === "Ejemplo"
+        usuario.value === "Elly"
         &&
-        contraseña.value === "1234"
+        contraseña.value === "6759"
     ){
         alert("Entró correctamente");
 
